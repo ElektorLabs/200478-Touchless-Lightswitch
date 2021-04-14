@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Espressif)(type Legacy)(uri ${KIPRJMOD}/ESp32PicoKit/Espressif.lib)(options "")(descr ""))
+  (lib (name ReadymadeModules)(type Legacy)(uri ${KIPRJMOD}/ReadymadeModules.lib)(options "")(descr ""))
+)
