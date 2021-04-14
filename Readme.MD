@@ -1,6 +1,6 @@
 # 200478 - Touchless Lightswitch
 
-<!--  ![3D Rendering of enclosure and pcb](http://url/to/img.png) -->
+![3D Rendering of enclosure and pcb](https://github.com/ElektorLabs/200478-Touchless-Lightswitch/blob/main/images/ViewSide.PNG)
 
 ## WARNING
 
