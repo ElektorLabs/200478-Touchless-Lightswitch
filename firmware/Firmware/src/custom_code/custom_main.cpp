@@ -16,7 +16,8 @@
 #include "custom_config.h"
 
 
-#define RELAIS_PIN 4
+#define RELAIS_PIN_SET 4
+#define RELAIS_PIN_RESET 15
 
 
 SemaphoreHandle_t RelaisStateChangeSem=NULL;
@@ -36,7 +37,7 @@ void  custom_setup(){
         Serial.println("Relais init");
     #endif
     RelaisStateChangeSem = xSemaphoreCreateBinary();
-    relais.begin(RELAIS_PIN,true,RelaisStateChangeSem);
+    relais.begin(RELAIS_PIN_SET,RELAIS_PIN_RESET,false,false,RelaisStateChangeSem);
     MQTT_ConnectorStart();
     WEBAPI_MQTT_RegisterConnector();
     WEBAPI_Switch_RegisterConnector(&relais);
