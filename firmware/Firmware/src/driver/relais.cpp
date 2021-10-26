@@ -35,7 +35,7 @@
     }
 
     void Relais::on(){
-        if(true==inverted){
+        if(true==inverted_set){
 			digitalWrite(pin_set,LOW);
 			delay(750);
 			digitalWrite(pin_set,HIGH);
@@ -52,7 +52,7 @@
 
     }
     void Relais::off(){
-	    if(false==inverted){
+	    if(false==inverted_reset){
             digitalWrite(pin_reset,LOW);
 			delay(750);
 			digitalWrite(pin_reset,HIGH);
@@ -92,7 +92,3 @@
     void Relais::UnregisterSemaphore(void  ){
             this->Semampore=NULL;
     }
-
-
-
-

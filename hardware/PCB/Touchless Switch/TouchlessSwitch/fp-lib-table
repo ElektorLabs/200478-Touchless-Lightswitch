@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name ESP32-PICO-KIT)(type KiCad)(uri ${KIPRJMOD}/ESp32PicoKit/ESP32-PICO-KIT.pretty)(options "")(descr ""))
+  (lib (name ADW1203HLW)(type KiCad)(uri ${KIPRJMOD}/ADW1203HLW.pretty)(options "")(descr ""))
 )

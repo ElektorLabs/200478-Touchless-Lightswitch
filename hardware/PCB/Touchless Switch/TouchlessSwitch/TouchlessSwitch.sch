@@ -99,23 +99,8 @@ Wire Wire Line
 Connection ~ 6650 3750
 Wire Wire Line
 	6650 3750 6650 3800
-$Comp
-L Relay:ADW11 RE1
-U 1 1 605B7F3A
-P 3300 3550
-F 0 "RE1" H 3450 3300 50  0000 R CNN
-F 1 "ADW11" H 3600 3950 50  0000 R CNN
-F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 4625 3500 50  0001 C CNN
-F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 3300 3550 50  0001 C CNN
-	1    3300 3550
-	-1   0    0    -1  
-$EndComp
 Text Notes 3850 1750 0    50   ~ 0
 3W / 0.9A @ 3.3V out max
-Wire Wire Line
-	3500 3850 3500 3900
-Wire Wire Line
-	3500 3150 3500 3250
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even K3
 U 1 1 605F20A6
@@ -300,70 +285,59 @@ Wire Wire Line
 $Comp
 L Device:D D2
 U 1 1 606140AD
-P 3800 3500
-F 0 "D2" H 3650 3550 50  0000 C CNN
-F 1 "1N4001" H 3900 3600 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3800 3500 50  0001 C CNN
-F 3 "~" H 3800 3500 50  0001 C CNN
-	1    3800 3500
+P 4100 3500
+F 0 "D2" H 3950 3550 50  0000 C CNN
+F 1 "1N4001" H 4200 3600 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4100 3500 50  0001 C CNN
+F 3 "~" H 4100 3500 50  0001 C CNN
+	1    4100 3500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1700 3850 3100 3850
 Wire Wire Line
-	3500 3150 3800 3150
+	4100 3150 4100 3350
 Wire Wire Line
-	3800 3150 3800 3350
-Wire Wire Line
-	3800 3650 3800 3900
-Wire Wire Line
-	3800 3900 3500 3900
+	4100 3650 4100 3950
 $Comp
 L power:GND #PWR0106
 U 1 1 60654EB1
-P 3800 4500
-F 0 "#PWR0106" H 3800 4250 50  0001 C CNN
-F 1 "GND" H 3805 4327 50  0000 C CNN
-F 2 "" H 3800 4500 50  0001 C CNN
-F 3 "" H 3800 4500 50  0001 C CNN
-	1    3800 4500
+P 4100 5300
+F 0 "#PWR0106" H 4100 5050 50  0001 C CNN
+F 1 "GND" H 4105 5127 50  0000 C CNN
+F 2 "" H 4100 5300 50  0001 C CNN
+F 3 "" H 4100 5300 50  0001 C CNN
+	1    4100 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:BC337 T1
 U 1 1 606986AF
-P 3900 4100
-F 0 "T1" H 4091 4146 50  0000 L CNN
-F 1 "BC337" H 4091 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4100 4025 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 3900 4100 50  0001 L CNN
-	1    3900 4100
+P 4200 4200
+F 0 "T1" H 4391 4246 50  0000 L CNN
+F 1 "BC337" H 4391 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4400 4125 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 4200 4200 50  0001 L CNN
+	1    4200 4200
 	-1   0    0    -1  
 $EndComp
-Connection ~ 3800 3900
 $Comp
 L Device:R_Small R1
 U 1 1 606A6FD4
-P 4500 4100
-F 0 "R1" V 4696 4100 50  0000 C CNN
-F 1 "1kR" V 4605 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4500 4100 50  0001 C CNN
-F 3 "~" H 4500 4100 50  0001 C CNN
-	1    4500 4100
+P 4600 4200
+F 0 "R1" V 4796 4200 50  0000 C CNN
+F 1 "1kR" V 4705 4200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4600 4200 50  0001 C CNN
+F 3 "~" H 4600 4200 50  0001 C CNN
+	1    4600 4200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3800 4300 3800 4500
-Wire Wire Line
-	4100 4100 4400 4100
 Wire Wire Line
 	4950 1800 4950 3150
 Wire Wire Line
 	5050 2350 5050 1900
 Wire Wire Line
-	5150 2000 5150 4100
-Wire Wire Line
-	4600 4100 5150 4100
+	5150 2000 5150 4200
 Wire Wire Line
 	8450 3150 8700 3150
 Text GLabel 9200 1700 0    50   Input ~ 0
@@ -448,14 +422,12 @@ Wire Wire Line
 Connection ~ 6450 3350
 Wire Wire Line
 	6450 3350 6950 3350
-Text GLabel 6000 2750 0    50   Input ~ 0
-RE_OUT
 Text GLabel 5550 1800 2    50   Input ~ 0
 3V3_IN
 Text GLabel 5550 1900 2    50   Input ~ 0
 GND_IN
 Text GLabel 5550 2000 2    50   Input ~ 0
-RE_OUT
+RE_S_OUT
 Text GLabel 6000 2850 0    50   Input ~ 0
 GND_IN
 Text GLabel 6000 2950 0    50   Input ~ 0
@@ -522,6 +494,106 @@ Wire Wire Line
 Wire Wire Line
 	4300 1800 4950 1800
 Wire Wire Line
-	3800 3150 4950 3150
-Connection ~ 3800 3150
+	4100 3150 4350 3150
+$Comp
+L ADW1203HLW:ADW1203HLW RE1
+U 1 1 615994E7
+P 3300 3550
+F 0 "RE1" H 2870 3596 50  0000 R CNN
+F 1 "ADW1203HLW" H 2870 3505 50  0000 R CNN
+F 2 "ADW1203HLW:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 2850 3800 50  0001 C CNN
+F 3 "" H 2850 3800 50  0001 C CNN
+	1    3300 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3150 3500 3150
+Wire Wire Line
+	3500 3150 3500 3250
+Connection ~ 4100 3150
+Wire Wire Line
+	3600 3850 3600 3950
+Wire Wire Line
+	3600 3950 4100 3950
+Connection ~ 4100 3950
+Wire Wire Line
+	4100 3950 4100 4000
+$Comp
+L Transistor_BJT:BC337 T2
+U 1 1 615B5229
+P 4450 4700
+F 0 "T2" H 4641 4746 50  0000 L CNN
+F 1 "BC337" H 4641 4655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 4625 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 4450 4700 50  0001 L CNN
+	1    4450 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 615B522F
+P 4750 4700
+F 0 "R2" V 4946 4700 50  0000 C CNN
+F 1 "1kR" V 4855 4700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4750 4700 50  0001 C CNN
+F 3 "~" H 4750 4700 50  0001 C CNN
+	1    4750 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 3850 3450 3900
+Wire Wire Line
+	4350 4900 4350 5150
+$Comp
+L Device:D D3
+U 1 1 615EB1B2
+P 4350 3500
+F 0 "D3" H 4200 3550 50  0000 C CNN
+F 1 "1N4001" H 4450 3600 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4350 3500 50  0001 C CNN
+F 3 "~" H 4350 3500 50  0001 C CNN
+	1    4350 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 3900 4350 3900
+Wire Wire Line
+	4350 3900 4350 3650
+Wire Wire Line
+	4350 3350 4350 3150
+Connection ~ 4350 3150
+Wire Wire Line
+	4350 3150 4950 3150
+Wire Wire Line
+	4400 4200 4500 4200
+Wire Wire Line
+	4350 3900 4350 4500
+Connection ~ 4350 3900
+Wire Wire Line
+	4350 5150 4100 5150
+Wire Wire Line
+	4100 4400 4100 5150
+Connection ~ 4100 5150
+Wire Wire Line
+	4100 5150 4100 5300
+Wire Wire Line
+	4700 4200 5150 4200
+Wire Wire Line
+	4850 4700 5250 4700
+Wire Wire Line
+	5250 4700 5250 2150
+Wire Wire Line
+	5250 2150 5550 2150
+Text GLabel 5550 2150 2    50   Input ~ 0
+RE_R_OUT
+Text GLabel 6000 2750 0    50   Input ~ 0
+RE_R_OUT
+Text GLabel 6000 2650 0    50   Input ~ 0
+RE_S_OUT
+Wire Wire Line
+	6950 2750 6850 2750
+Wire Wire Line
+	6850 2750 6850 2650
+Wire Wire Line
+	6850 2650 6000 2650
 $EndSCHEMATC
